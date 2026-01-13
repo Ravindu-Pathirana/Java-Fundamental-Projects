@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList list = new ArrayList();
+        StudentService service = new StudentService();
+        Student student = service.getStudent();
+        System.out.println(student);
 
-        list.
+
     }
 }
