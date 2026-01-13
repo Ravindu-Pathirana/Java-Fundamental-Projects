@@ -1,13 +1,13 @@
 package edu.icet.demo;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import java.util.ArrayList;
+@SpringBootApplication
 
 public class Main {
     public static void main(String[] args) {
-        StudentService service = new StudentService();
-        Student student = service.getStudent();
-        System.out.println(student);
-
-
+        SpringApplication.run(Main.class);
     }
 }
