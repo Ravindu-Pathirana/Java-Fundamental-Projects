@@ -13,4 +13,13 @@ public class StudentController {
         System.out.println(student);
         return student;
     }
+
+    @GetMapping("/teacher")
+    public String getTeacher() {
+        StudentService service = new StudentService();
+        Student student = service.getStudent();
+        System.out.println(student);
+        return "Ravindu";
+    }
+    
 }
