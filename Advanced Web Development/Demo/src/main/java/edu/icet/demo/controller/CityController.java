@@ -13,5 +13,4 @@ public class CityController {
         System.out.println("Request Received");
         CityService service = new CityService();
         return service.getCityByPostalCode(postalCode);
-    }
 }
