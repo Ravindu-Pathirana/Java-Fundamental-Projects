@@ -4,5 +4,6 @@ public class Demo1 {
         int x,a=12,b=0;
         x=a/b; //
         System.out.println("End");
+        
     }
 }
