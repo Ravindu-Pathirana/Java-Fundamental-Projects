@@ -6,6 +6,7 @@ public class Demo2 {
             x=a/b; //
         }catch(ArithmeticException ex){
             x=-1;
+            System.out.println("ArithmeticException caught: " + ex.getMessage());
         }
         System.out.println("x : "+x);
         System.out.println("End");
