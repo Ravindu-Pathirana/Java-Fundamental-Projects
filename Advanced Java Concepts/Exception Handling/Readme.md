@@ -61,7 +61,12 @@ Program finished
 
 ⸻
 
-📌 How It Works (Steps) 1. Code inside try is executed 2. If an error occurs → exception is thrown 3. catch block handles the error 4. finally block runs (optional)
+📌 How It Works (Steps) 
+
+1. Code inside try is executed 
+2. If an error occurs → exception is thrown 
+3. catch block handles the error 
+4. finally block runs (optional)
 
 ⸻
 
