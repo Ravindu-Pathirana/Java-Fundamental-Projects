@@ -1,4 +1,4 @@
-package edu.icet.crm.customer.controller.service;
+package edu.icet.crm.customer.service;
 
 import org.springframework.util.StringUtils;
 

@@ -1,6 +1,6 @@
 package edu.icet.crm.customer.controller;
 
-import edu.icet.crm.customer.controller.service.CityService;
+import edu.icet.crm.customer.service.CityService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
