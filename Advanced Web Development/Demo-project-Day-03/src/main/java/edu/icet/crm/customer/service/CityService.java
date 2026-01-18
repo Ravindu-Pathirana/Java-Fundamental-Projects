@@ -1,11 +1,13 @@
 package edu.icet.crm.customer.service;
 
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class CityService {
 
     public Map<String,String> getCityByName(String postalcode){
