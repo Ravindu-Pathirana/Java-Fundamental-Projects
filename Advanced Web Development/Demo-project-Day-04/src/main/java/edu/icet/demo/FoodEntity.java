@@ -14,5 +14,6 @@ public class FoodEntity {
     private String name;
     private String description;
     private String price;
+    private boolean isStockAvailable;
 
 }
