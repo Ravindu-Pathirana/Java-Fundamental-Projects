@@ -1,4 +1,4 @@
-package edu.icet.demo;
+package edu.icet.demo.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
