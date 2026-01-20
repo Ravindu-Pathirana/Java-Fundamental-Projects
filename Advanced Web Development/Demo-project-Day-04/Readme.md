@@ -21,10 +21,10 @@ ORM will automatically convert the Java object into SQL queries.
 
 ✅ What ORM does for you
 
-✔ Maps a Java class → Database table
-✔ Maps class fields → table columns
-✔ Automatically handles CRUD operations
-(Create, Read, Update, Delete)
+    ✔ Maps a Java class → Database table
+    ✔ Maps class fields → table columns
+    ✔ Automatically handles CRUD operations
+    (Create, Read, Update, Delete)
 
 ⸻
 
