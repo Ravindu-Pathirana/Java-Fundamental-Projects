@@ -32,9 +32,9 @@ ORM will automatically convert the Java object into SQL queries.
 ```
 @Entity
 public class Student {
-@Id
-private int id;
-private String name;
+    @Id
+    private int id;
+    private String name;
 }
 ```
 This becomes a table like:
