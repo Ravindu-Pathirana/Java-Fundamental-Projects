@@ -1,4 +1,4 @@
-ORM stands for Object-Relational Mapping.
+ORM stands for Object-Relational Mapping -  Forward Engineering.
 
 It is a technique/framework that lets you work with a database using Java objects instead of writing SQL manually.
 
