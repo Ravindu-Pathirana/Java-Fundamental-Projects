@@ -1,7 +1,9 @@
 package edu.icet.demo.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name="student")
 public class StudentEntity {
