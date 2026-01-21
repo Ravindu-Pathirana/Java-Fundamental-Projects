@@ -1,4 +1,4 @@
-package edu.icet.demo;
+package edu.icet.demo.model;
 
 import lombok.Data;
 import lombok.ToString;
