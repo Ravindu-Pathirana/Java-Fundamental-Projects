@@ -10,8 +10,7 @@ public class StudentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Integer stdId;
-
+    private Integer stdId;
     private String firstname;
     private String lastname;
     private String province;

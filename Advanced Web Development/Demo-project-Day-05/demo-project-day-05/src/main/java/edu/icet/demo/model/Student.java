@@ -7,6 +7,7 @@ import lombok.ToString;
 @ToString
 public class Student {
 
+    private Integer stdId;
     private String firstname;
     private String lastname;
     private String province;
