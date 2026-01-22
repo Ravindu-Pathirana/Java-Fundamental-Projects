@@ -18,8 +18,6 @@ function btnRegister() {
 
   console.log("Registering user:", userData);
 
-  alert("Registration successful!");
-
   fetch("http://localhost:8080/student", {
     method: "POST",
     headers: {
@@ -29,9 +27,15 @@ function btnRegister() {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("Server response:", data);
+      showSuccessMessage();
     })
     .catch((error) => {
       console.error("Error during registration:", error);
     });
+}
+
+function showSuccessMessage() {
+  const toastLiveExample = document.getElementById("liveToast");
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastBootstrap.show();
 }
