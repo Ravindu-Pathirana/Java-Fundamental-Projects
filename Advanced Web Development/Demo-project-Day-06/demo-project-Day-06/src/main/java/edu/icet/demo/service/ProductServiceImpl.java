@@ -42,4 +42,17 @@ public class ProductServiceImpl implements ProductService{
         return products;
 
     }
+
+    public ArrayList<Product> getProductsByCategory(String category){
+        Iterable<ProductEntity> allByCategory =  repository.findAllByCategory(category);
+
+        ArrayList<Product> products = new ArrayList<>();
+
+        allByCategory.forEach(productEntity -> {
+            Product product = mapper.convertValue(productEntity, Product.class);
+            products.add(product);
+        });
+        return products;
+
+    }
 }

@@ -7,4 +7,5 @@ import java.util.ArrayList;
 public interface ProductService {
     void saveProduct(Product product);
     ArrayList<Product> getAllProducts();
+    ArrayList<Product> getProductsByCategory(String category);
 }
