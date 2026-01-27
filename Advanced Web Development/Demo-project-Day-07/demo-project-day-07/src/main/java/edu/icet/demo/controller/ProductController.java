@@ -21,8 +21,10 @@ public class ProductController {
     }
 
     @GetMapping("/product")
-    ArrayList<Product> retrive(){
-        return productservice.retrive();
+    ArrayList<Product> retrieve(){
+        return productservice.retrieve();
     }
+
+    @DeleteMapping()
 
 }

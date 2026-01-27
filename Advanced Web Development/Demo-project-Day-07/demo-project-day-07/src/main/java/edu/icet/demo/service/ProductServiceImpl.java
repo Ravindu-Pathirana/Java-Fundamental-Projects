@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
        return mapper.convertValue(savedProduct,Product.class);
     }
 
-    public ArrayList<Product> retrive(){
+    public ArrayList<Product> retrieve(){
         Iterable<ProductEntity> productList = repository.findAll();
         ArrayList<Product> productModels = new ArrayList<>();
 

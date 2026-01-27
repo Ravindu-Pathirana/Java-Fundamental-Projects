@@ -17,6 +17,7 @@ function saveProduct() {
     .then((res) => res.json())
     .then((data) => {
       console.log("Product saved successfully:", data);
+      clearForm();
     })
     .catch((error) => {
       console.error("Error saving product:", error);
@@ -41,4 +42,11 @@ function mapRequest() {
   );
   requestBody.category = document.getElementById("txt-product-category").value;
   return requestBody;
+}
+
+function clearForm() {
+  document.getElementById("txt-product-name").value = "";
+  document.getElementById("txt-product-description").value = "";
+  document.getElementById("txt-product-price").value = "";
+  document.getElementById("txt-product-category").value = "";
 }

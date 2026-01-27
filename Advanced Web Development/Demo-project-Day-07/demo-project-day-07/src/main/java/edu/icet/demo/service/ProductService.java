@@ -6,5 +6,5 @@ import java.util.ArrayList;
 
 public interface ProductService {
     public Product persist(Product product);
-    public ArrayList<Product> retrive();
+    public ArrayList<Product> retrieve();
 }
