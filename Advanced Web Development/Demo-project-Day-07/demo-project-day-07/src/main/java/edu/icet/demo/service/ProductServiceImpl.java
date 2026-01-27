@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tools.jackson.databind.ObjectMapper;
 
+import java.util.ArrayList;
+
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -21,5 +23,15 @@ public class ProductServiceImpl implements ProductService {
                                         mapper.convertValue(
                                             product,ProductEntity.class));
        return mapper.convertValue(savedProduct,Product.class);
+    }
+
+    public ArrayList<Product> retrive(){
+        Iterable<ProductEntity> productList = repository.findAll();
+        ArrayList<Product> productModels = new ArrayList<>();
+
+        productList.forEach(productEntity -> {
+            productModels.add(mapper.convertValue(productEntity, Product.class));
+        });
+        return productModels;
     }
 }
