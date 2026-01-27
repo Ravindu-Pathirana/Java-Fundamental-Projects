@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import tools.jackson.databind.ObjectMapper;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -33,5 +34,13 @@ public class ProductServiceImpl implements ProductService {
             productModels.add(mapper.convertValue(productEntity, Product.class));
         });
         return productModels;
+    }
+
+    public void removeProduct(Integer productId) {
+        Optional<ProductEntity> byId = repository.findById(productId);
+
+        if (byId.isPresent()) {
+            repository.delete(byId.get());
+        }
     }
 }

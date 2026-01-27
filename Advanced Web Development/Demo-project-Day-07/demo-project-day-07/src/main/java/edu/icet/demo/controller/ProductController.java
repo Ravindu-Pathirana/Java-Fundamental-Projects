@@ -25,6 +25,8 @@ public class ProductController {
         return productservice.retrieve();
     }
 
-    @DeleteMapping()
-
+    @DeleteMapping("/product")
+    void remove(@RequestParam(name="id") Integer productId){
+        productservice.removeProduct(productId);
+    }
 }

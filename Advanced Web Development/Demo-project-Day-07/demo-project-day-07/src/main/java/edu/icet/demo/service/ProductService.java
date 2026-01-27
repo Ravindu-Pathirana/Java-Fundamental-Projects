@@ -7,4 +7,5 @@ import java.util.ArrayList;
 public interface ProductService {
     public Product persist(Product product);
     public ArrayList<Product> retrieve();
+    public void removeProduct(Integer productId);
 }
