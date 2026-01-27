@@ -10,6 +10,9 @@ function saveProduct() {
   fetch("http://localhost:8080/product", {
     method: "POST",
     body: JSON.stringify(requestBody),
+    headers: {
+      "Content-Type": "application/json",
+    },
   })
     .then((res) => res.json())
     .then((data) => {
