@@ -16,7 +16,11 @@ import java.util.Map;
 public class ProductController {
 
     @Autowired // dependency injection / Field Injection
-    ProductService productService; //dependency
+    ProductService productServiceOne; //dependency
+
+
+    @Autowired
+    ProductService productServiceTwo;
 
     //constructor Injection
 //    ProductController(ProductService productService){
@@ -32,7 +36,7 @@ public class ProductController {
 
         //System.out.println(transactionAmount);
         log.info("Transaction Received. Payment Amount {}",transactionAmount);
-        return productService.getStudents();
+        return productServiceOne.getStudents();
 
     }
 
