@@ -31,7 +31,7 @@ public class ProductController {
     Map<String, String> getStudents(@PathVariable String transactionAmount){
 
         //System.out.println(transactionAmount);
-        log.info(transactionAmount);
+        log.info("Transaction Received. Payment Amount {}",transactionAmount);
         return productService.getStudents();
 
     }
