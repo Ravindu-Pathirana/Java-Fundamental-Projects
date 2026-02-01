@@ -3,6 +3,7 @@ package edu.icet.demo.controller;
 import edu.icet.demo.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,11 +17,16 @@ import java.util.Map;
 public class ProductController {
 
     @Autowired // dependency injection / Field Injection
+    @Lazy
     ProductService productServiceOne; //dependency
 
-
     @Autowired
+    @Lazy
     ProductService productServiceTwo;
+
+    ProductController(){
+        log.info("ProductController Object Loaded.");
+    }
 
     //constructor Injection
 //    ProductController(ProductService productService){
