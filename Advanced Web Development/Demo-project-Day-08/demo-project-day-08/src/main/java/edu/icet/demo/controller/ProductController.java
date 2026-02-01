@@ -12,8 +12,13 @@ import java.util.Map;
 @RequestMapping("/products")
 public class ProductController {
 
-    @Autowired
-    ProductService productService;
+    @Autowired // dependency injection / Field Injection
+    ProductService productService; //dependency
+
+    //constructor Injection
+//    ProductController(ProductService productService){
+//        this.productService= productService;
+//    }
 
     //Rest API
     //http://localhost:8080/products/all
